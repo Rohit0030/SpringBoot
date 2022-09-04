@@ -14,7 +14,7 @@ public class DemoController {
     //Print out on Browser
     @RequestMapping("/welcome")
     public String welcome(){
-        return "HEllo Rohit Welcome to the Spring boot on browser . . . . . . . ...";
+        return "HEllo Rohit Welcome to the Spring boot on browser . . . . . . . ";
     }
 
     @RequestMapping("/add")
