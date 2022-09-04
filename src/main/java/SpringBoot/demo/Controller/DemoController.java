@@ -9,7 +9,7 @@ public class DemoController {
     //Method to print "Hello Rohit welcome to the Spring Boot............" in console
     @RequestMapping("/hello") //Step 2 use this annotation to create endpoint
     public void hello(){
-        System.out.println("Hello Rohit welcome to the Spring Boot in console..............");
+        System.out.println("Hello Rohit welcome to the Spring Boot in console...............");
     }
     //Print out on Browser
     @RequestMapping("/welcome")
