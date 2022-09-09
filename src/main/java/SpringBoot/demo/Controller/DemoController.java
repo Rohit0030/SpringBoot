@@ -2,6 +2,7 @@ package SpringBoot.demo.Controller;
 
 import SpringBoot.demo.model.Student;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
@@ -48,7 +49,10 @@ public class DemoController {
         Student.Employee obj3= new Student.Employee("Rohit",21,"CS");
         System.out.println(obj3);
         return obj2;
+    }
+    @RequestMapping("/getinpute")
+    public String getinpute(@RequestParam String name ,@RequestParam String surname){
 
-
+    return "The person name is: "+name+" "+surname;
     }
 }
