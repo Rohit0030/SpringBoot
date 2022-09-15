@@ -40,7 +40,7 @@ public class DemoController {
     @RequestMapping("/student")
     public Student getStudent(){
 
-        return new Student("Raj",23,"CS");
+        return new Student("Rohit",23,"CS");
     }
 
 
@@ -48,9 +48,9 @@ public class DemoController {
     public Student getFirstStudent(){
 
         ArrayList<Student> students= new ArrayList<>();
-        Student obj= new Student("Raj",23,"CS");
-        Student obj2= new Student("Mukesh",23,"CS");
-        Student obj3= new Student("Rahul",23,"CS");
+        Student obj= new Student("Rohit",23,"CS");
+        Student obj2= new Student("Richa",21,"CS");
+        Student obj3= new Student("Samyak",22,"CS");
         students.add(obj);
         students.add(obj2);
         students.add(obj3);
