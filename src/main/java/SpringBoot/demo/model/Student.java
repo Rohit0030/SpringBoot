@@ -1,13 +1,25 @@
 package SpringBoot.demo.model;
 
-public class Student {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
+@Entity(name="test_student_table")
+public class Student {
+    @Id
+    @GeneratedValue
+    long id;
     String name;
     int age;
+    @Column(name = "Stream")
     String section;
 
     // parameterized constructor
 
+    // default parameter constructor
+    public Student() {
+    }
 
     public Student(String name, int age, String section) {
         this.name = name;

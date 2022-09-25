@@ -1,9 +1,7 @@
 package SpringBoot.demo.controller;
 
 import SpringBoot.demo.model.Student;
-
 import org.springframework.web.bind.annotation.*;
-
 import java.util.ArrayList;
 
 @RestController
